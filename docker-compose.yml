@@ -54,7 +54,7 @@ services:
       REDIS_PORT: 6379
       JWT_SECRET: ${JWT_SECRET:-404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
       JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-604800000}
-      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-pulsewatch-google-client-id.apps.googleusercontent.com}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-870803756957-i09rf7aptulg6jng376tgasp6gvmo604.apps.googleusercontent.com}
       SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
       SMTP_PORT: ${SMTP_PORT:-587}
       SMTP_USERNAME: ${SMTP_USERNAME:-}
@@ -74,7 +74,7 @@ services:
     depends_on:
       - backend
     environment:
-      - VITE_GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-pulsewatch-google-client-id.apps.googleusercontent.com}
+      - VITE_GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID:-870803756957-i09rf7aptulg6jng376tgasp6gvmo604.apps.googleusercontent.com}
     ports:
       - "80:80"
       - "443:443"
