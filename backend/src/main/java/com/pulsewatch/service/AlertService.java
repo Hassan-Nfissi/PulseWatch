@@ -25,7 +25,7 @@ public class AlertService {
     private String mailFrom;
 
     private static final DateTimeFormatter DATE_FORMATTER =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss UTC").withZone(ZoneId.of("UTC"));
+            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss 'UTC'").withZone(ZoneId.of("UTC"));
 
     @Async
     public void sendIncidentOpenAlert(Monitor monitor, Incident incident) {
