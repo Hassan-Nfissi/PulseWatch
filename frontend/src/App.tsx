@@ -9,6 +9,7 @@ import { MonitorDetailPage } from './pages/MonitorDetailPage';
 import { StatusPagesAdminPage } from './pages/StatusPagesAdminPage';
 import { PublicStatusPage } from './pages/PublicStatusPage';
 import { LoginPage } from './pages/LoginPage';
+import { LandingPage } from './pages/LandingPage';
 
 const ProtectedLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAuthenticated, isLoading } = useAuth();
@@ -50,9 +51,12 @@ export const App: React.FC = () => {
             {/* Login Route */}
             <Route path="/login" element={<LoginPage />} />
 
+            {/* Public SaaS Landing Page */}
+            <Route path="/" element={<LandingPage />} />
+
             {/* Protected App Routes */}
             <Route
-              path="/"
+              path="/dashboard"
               element={
                 <ProtectedLayout>
                   <DashboardPage />

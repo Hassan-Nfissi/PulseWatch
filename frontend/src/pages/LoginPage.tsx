@@ -10,11 +10,14 @@ export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [devEmail, setDevEmail] = useState('demo.engineer');
+  const suggestedEmail = (location.state as any)?.suggestedEmail;
+  const [devEmail, setDevEmail] = useState(
+    suggestedEmail ? suggestedEmail.split('@')[0] : 'demo.engineer'
+  );
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const from = (location.state as any)?.from?.pathname || '/';
+  const from = (location.state as any)?.from?.pathname || '/dashboard';
 
   React.useEffect(() => {
     if (isAuthenticated) {
