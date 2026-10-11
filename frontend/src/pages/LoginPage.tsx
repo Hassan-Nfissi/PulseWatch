@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { ShieldCheck, Zap, AlertCircle } from 'lucide-react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { ShieldCheck, Zap, AlertCircle, ArrowLeft } from 'lucide-react';
 import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../context/AuthContext';
 import { PulseWatchLogo } from '../components/PulseWatchLogo';
@@ -59,16 +59,27 @@ export const LoginPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-md space-y-8">
-        <div className="text-center space-y-3">
+      <div className="w-full max-w-md space-y-6">
+        {/* Back to Home Button */}
+        <div>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-white transition-colors py-1.5 px-3 rounded-xl bg-slate-900/60 hover:bg-slate-900 border border-slate-800"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Back to PulseWatch Home</span>
+          </Link>
+        </div>
+
+        <div className="text-center space-y-2">
           <div className="flex justify-center">
             <PulseWatchLogo size="xl" showText={false} />
           </div>
-          <h1 className="text-3xl font-black tracking-widest uppercase bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">
-            PulseWatch
+          <h1 className="text-2xl font-black tracking-wider uppercase bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">
+            Get Started with PulseWatch
           </h1>
-          <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">
-            Continuous Uptime Monitoring &bull; Incident Detection &bull; Status Pages
+          <p className="text-xs text-slate-400">
+            Sign in or create your free account. 100% Free launch access &bull; No credit card needed.
           </p>
         </div>
 
