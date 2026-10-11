@@ -37,7 +37,7 @@ const ProtectedLayout: React.FC<{ children: React.ReactNode }> = ({ children }) 
 export const App: React.FC = () => {
   const googleClientId =
     import.meta.env.VITE_GOOGLE_CLIENT_ID ||
-    'pulsewatch-google-client-id.apps.googleusercontent.com';
+    '870803756957-i09rf7aptulg6jng376tgasp6gvmo604.apps.googleusercontent.com';
 
   return (
     <GoogleOAuthProvider clientId={googleClientId}>

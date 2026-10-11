@@ -69,6 +69,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        VITE_GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-870803756957-i09rf7aptulg6jng376tgasp6gvmo604.apps.googleusercontent.com}
     container_name: pulsewatch-frontend
     restart: unless-stopped
     depends_on:
