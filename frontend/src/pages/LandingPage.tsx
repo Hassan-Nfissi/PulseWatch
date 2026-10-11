@@ -11,12 +11,16 @@ import { PricingSection } from '../components/landing/PricingSection';
 import { FaqSection } from '../components/landing/FaqSection';
 import { CtaBanner } from '../components/landing/CtaBanner';
 import { LandingFooter } from '../components/landing/LandingFooter';
+import { MouseSpotlightBackground } from '../components/landing/MouseSpotlightBackground';
 
 export const LandingPage: React.FC = () => {
   const { isAuthenticated, user } = useAuth();
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col selection:bg-indigo-500 selection:text-white relative">
+      {/* Interactive Cursor Spotlight Background */}
+      <MouseSpotlightBackground />
+
       {/* Authenticated Sticky Notice Bar */}
       {isAuthenticated && user && (
         <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 border-b border-indigo-500/20 py-2 px-4 text-center text-xs">
@@ -39,7 +43,7 @@ export const LandingPage: React.FC = () => {
       <LandingNavbar />
 
       {/* Main Marketing Content */}
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         <HeroSection />
         <FeaturesSection />
         <ArchitectureSection />
@@ -50,7 +54,9 @@ export const LandingPage: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <LandingFooter />
+      <div className="relative z-10">
+        <LandingFooter />
+      </div>
     </div>
   );
 };
