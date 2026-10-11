@@ -20,9 +20,14 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-8">
           <Link to="/dashboard" className="flex items-center gap-3 group">
             <PulseWatchLogo size="md" showText={false} className="group-hover:scale-105 transition-transform" />
-            <span className="font-extrabold text-lg tracking-wider uppercase bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">
-              PulseWatch
-            </span>
+            <div className="flex flex-col">
+              <span className="font-black text-lg tracking-wider text-white">
+                PulseWatch
+              </span>
+              <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-widest -mt-1">
+                Telemetry Console
+              </span>
+            </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
@@ -52,6 +57,12 @@ export const Navbar: React.FC = () => {
             >
               <Globe className="w-4 h-4" />
               Status Pages
+            </Link>
+            <Link
+              to="/"
+              className="text-xs text-zinc-400 hover:text-zinc-200 px-2 py-1.5 rounded-lg transition-colors hidden lg:flex items-center gap-1"
+            >
+              <span>Public Site</span>
             </Link>
           </nav>
         </div>
