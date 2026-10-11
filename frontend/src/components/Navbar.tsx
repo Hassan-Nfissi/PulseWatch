@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Globe, LogOut } from 'lucide-react';
+import { Activity, LayoutDashboard, Globe, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { PulseWatchLogo } from './PulseWatchLogo';
 
