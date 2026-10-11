@@ -12,10 +12,8 @@ export const PricingSection: React.FC = () => {
             Public Launch • 100% Free
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Full monitoring access,{' '}
-            <span className="bg-gradient-to-r from-emerald-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">
-              zero subscription fees.
-            </span>
+            Full monitoring access. <br className="hidden sm:inline" />
+            <span className="text-zinc-400">Zero subscription fees during launch.</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-400 leading-relaxed">
             During our public launch phase, all core monitoring capabilities are completely free.

@@ -15,11 +15,11 @@ export const LandingNavbar: React.FC = () => {
         <Link to="/" className="flex items-center gap-3 group">
           <PulseWatchLogo size="md" showText={false} className="group-hover:scale-105 transition-transform" />
           <div className="flex flex-col">
-            <span className="font-black text-xl tracking-wider uppercase bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">
+            <span className="font-extrabold text-xl tracking-wider text-white">
               PulseWatch
             </span>
-            <span className="text-[10px] font-semibold tracking-widest text-indigo-400/90 uppercase -mt-1">
-              Uptime Infrastructure
+            <span className="text-[10px] font-mono font-medium text-zinc-400 uppercase tracking-widest -mt-0.5">
+              Telemetry Platform
             </span>
           </div>
         </Link>
@@ -79,7 +79,7 @@ export const LandingNavbar: React.FC = () => {
               </Link>
               <Link
                 to="/login"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 shadow-lg shadow-indigo-500/25 transition-all hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-zinc-950 bg-white hover:bg-zinc-200 shadow-sm transition-all hover:scale-[1.02]"
               >
                 <span>Get Started Free</span>
                 <ArrowRight className="w-3.5 h-3.5" />

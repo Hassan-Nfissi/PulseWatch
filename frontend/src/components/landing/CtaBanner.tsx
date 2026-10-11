@@ -13,20 +13,17 @@ export const CtaBanner: React.FC = () => {
 
           <div className="relative max-w-3xl mx-auto space-y-6">
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-              Start monitoring in seconds.{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
-                Seriously.
-              </span>
+              Start monitoring in seconds.
             </h2>
 
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
-              Create your first monitor, set up automated email notifications, and publish your branded public status page in less than 2 minutes.
+            <p className="text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto">
+              Create your first monitor, configure automated email notifications, and publish your branded public status page in less than 2 minutes.
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 to="/login"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl text-base font-bold text-white bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 shadow-xl shadow-indigo-500/30 transition-all hover:scale-[1.02]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl text-base font-bold text-zinc-950 bg-white hover:bg-zinc-200 shadow-xl transition-all hover:scale-[1.02]"
               >
                 <span>Get Started for Free</span>
                 <ArrowRight className="w-5 h-5" />

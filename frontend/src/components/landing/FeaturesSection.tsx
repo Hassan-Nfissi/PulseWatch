@@ -69,10 +69,8 @@ export const FeaturesSection: React.FC = () => {
             Features & Capabilities
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Everything you need for{' '}
-            <span className="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-              uncompromising uptime.
-            </span>
+            Complete synthetic monitoring. <br className="hidden sm:inline" />
+            <span className="text-zinc-400">Zero unnecessary complexity.</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-400">
             Engineered from the ground up for high reliability, minimal resource footprint, and instant failure visibility.

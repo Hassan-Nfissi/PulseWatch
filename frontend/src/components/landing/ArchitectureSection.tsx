@@ -62,10 +62,8 @@ export const ArchitectureSection: React.FC = () => {
             Engineering & Infrastructure
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-            Built for developers who value{' '}
-            <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
-              architectural honesty.
-            </span>
+            Built for engineering teams who demand <br className="hidden sm:inline" />
+            <span className="text-zinc-400">transparent performance.</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-400">
             No bloated dependencies, no mystery black boxes. PulseWatch is engineered for transparent speed, ironclad security, and cloud-native resilience.
