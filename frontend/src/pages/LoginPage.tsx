@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Activity, ShieldCheck, Zap, AlertCircle } from 'lucide-react';
+import { ShieldCheck, Zap, AlertCircle } from 'lucide-react';
 import { GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../context/AuthContext';
+import { PulseWatchLogo } from '../components/PulseWatchLogo';
 
 export const LoginPage: React.FC = () => {
   const { loginWithGoogle, loginWithDevMode, isAuthenticated } = useAuth();
@@ -56,13 +57,15 @@ export const LoginPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md space-y-8">
-        <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-indigo-600 flex items-center justify-center text-white mx-auto shadow-xl shadow-indigo-500/20">
-            <Activity className="w-6 h-6" />
+        <div className="text-center space-y-3">
+          <div className="flex justify-center">
+            <PulseWatchLogo size="xl" showText={false} />
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-white">Welcome to PulseWatch</h1>
-          <p className="text-xs text-slate-400">
-            Continuous uptime monitoring, instant alerting, and public status pages.
+          <h1 className="text-3xl font-black tracking-widest uppercase bg-gradient-to-r from-white via-indigo-100 to-indigo-400 bg-clip-text text-transparent">
+            PulseWatch
+          </h1>
+          <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">
+            Continuous Uptime Monitoring &bull; Incident Detection &bull; Status Pages
           </p>
         </div>
 

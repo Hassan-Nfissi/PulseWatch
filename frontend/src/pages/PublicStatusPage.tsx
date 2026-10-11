@@ -11,6 +11,7 @@ import { apiClient } from '../api/client';
 import { PublicStatusPage as IPublicStatusPage } from '../types';
 import { StatusBadge } from '../components/StatusBadge';
 import { IncidentList } from '../components/IncidentList';
+import { PulseWatchLogo } from '../components/PulseWatchLogo';
 
 export const PublicStatusPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -61,10 +62,13 @@ export const PublicStatusPage: React.FC = () => {
     <div className="min-h-screen bg-slate-950 text-slate-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Brand Header */}
-        <div className="text-center space-y-2">
+        <div className="text-center space-y-3">
+          <div className="flex justify-center">
+            <PulseWatchLogo size="lg" showText={false} />
+          </div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-slate-400">
-            <Activity className="w-3.5 h-3.5 text-indigo-400" />
-            Live Status Page
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            Live System Status
           </div>
           <h1 className="text-3xl font-extrabold text-white tracking-tight">{data.title}</h1>
           {data.description && (
@@ -143,15 +147,17 @@ export const PublicStatusPage: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <div className="pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
-          Powered by{' '}
-          <a
-            href="/"
-            className="text-indigo-400 hover:text-indigo-300 font-medium"
-          >
-            PulseWatch
-          </a>{' '}
-          Uptime & Status Infrastructure
+        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-center gap-2 text-xs text-slate-500">
+          <div className="flex items-center gap-2">
+            <PulseWatchLogo size="sm" showText={false} />
+            <span>
+              Powered by{' '}
+              <a href="/" className="text-indigo-400 hover:text-indigo-300 font-semibold">
+                PulseWatch
+              </a>{' '}
+              Continuous Uptime Infrastructure
+            </span>
+          </div>
         </div>
       </div>
     </div>
