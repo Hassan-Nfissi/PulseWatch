@@ -23,8 +23,7 @@ export const LandingFooter: React.FC = () => {
             </Link>
 
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              Enterprise-grade uptime monitoring, incident management, and public status pages.
-              Engineered with Spring WebFlux, PostgreSQL 16 time-series, and zero-trust SSRF protection.
+              Co-founded and architected by <strong className="text-white font-medium">Hassan Nfissi</strong>. Enterprise-grade uptime monitoring, incident management, and public status pages powered by Spring WebFlux and zero-trust SSRF protection.
             </p>
 
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-emerald-400">
@@ -128,7 +127,7 @@ export const LandingFooter: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} PulseWatch Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} PulseWatch &bull; Co-Founded by <strong className="text-slate-300 font-medium">Hassan Nfissi</strong>. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5 text-slate-400">

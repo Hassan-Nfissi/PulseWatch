@@ -6,6 +6,7 @@ import { LandingNavbar } from '../components/landing/LandingNavbar';
 import { HeroSection } from '../components/landing/HeroSection';
 import { FeaturesSection } from '../components/landing/FeaturesSection';
 import { ArchitectureSection } from '../components/landing/ArchitectureSection';
+import { FounderSection } from '../components/landing/FounderSection';
 import { PricingSection } from '../components/landing/PricingSection';
 import { FaqSection } from '../components/landing/FaqSection';
 import { CtaBanner } from '../components/landing/CtaBanner';
@@ -42,6 +43,7 @@ export const LandingPage: React.FC = () => {
         <HeroSection />
         <FeaturesSection />
         <ArchitectureSection />
+        <FounderSection />
         <PricingSection />
         <FaqSection />
         <CtaBanner />

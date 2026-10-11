@@ -25,7 +25,7 @@ export const HeroSection: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
-          <span>PulseWatch 2.0 • Ultra-Low Latency & High Concurrency Monitoring</span>
+          <span>PulseWatch 2.0 • Co-Founded by Hassan Nfissi • Free Public Launch</span>
         </div>
 
         {/* Hero Title */}
@@ -38,7 +38,7 @@ export const HeroSection: React.FC = () => {
           </h1>
           <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-normal leading-relaxed">
             Continuous uptime monitoring, instant email alerting, and public status pages.
-            Powered by non-blocking WebFlux and SSRF-hardened architecture.
+            Co-founded and engineered by <strong className="text-white font-semibold">Hassan Nfissi</strong> with non-blocking WebFlux and SSRF-hardened architecture.
           </p>
         </div>
 
